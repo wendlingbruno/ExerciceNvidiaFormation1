@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#wrapper{
+    margin: 0 auto;
+    width: 90%; /* pour déterminer la taille du cadre de la page */
+}
+
+/* HEADER */
+
+.imgmenu{
+    z-index: 2;
+    display: flex;
+    background-color: white;
+}
+
+.logo{
+    width: 100px; /* taille du logo */
+}
+
+
+nav{
+    width: 100%;
+    text-transform: uppercase;
+}
+
+nav ul{
+    padding-top: 60px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* que le menu descende si la page est trop petite */ 
+}
+
+nav a:link, nav a:visited, nav a:hover, nav a:focus{
+    color: black;
+    text-decoration: none;
+}
+
+#zonecolonne1{ /* pour enlever la marge naturelle de la figure */
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+.banniere{
+    position: relative; /* pour activer le z-index et le fait de pouvoir placer le texte dedans plus tard */
+    z-index: -1;
+    width: 100%;
+    margin-top: -300px; /* pour que la bannière entre dans le menu */
+    margin-bottom: -320px; /* pour que la bannière se fasse rentrer dedans par ce qu'il y a en dessous */
+}
+
+.zonetextebanniere{
+    background-color: rgba(67, 104, 15, 0.5);
+    width: 100%;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-between;
+    bottom: 0;
+}
+
+.boutonbanniere{
+    background-color: rgb(116, 183, 26);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+}
+
+.boutonbanniere a:link, .boutonbanniere a:visited, .boutonbanniere a:hover, .boutonbanniere a:focus{
+    color: white;
+}
+
+.boutonbanniere::after{
+    content: '\25b8'
+}
+
+/* SECTION */
+
+section{
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.colonnesmilieu{
+    padding-top: 35px;
+    display: flex;
+}
+
+.colonne1{
+    width: 70%;
+    display: flex;
+}
+
+.colonne2{
+    background-color: rgb(116, 183, 26);
+    display: flex;
+    width: 30%;
+}
+
+.soustitre{
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-right: -10px;
+}
+
+.titre1{
+    display: flex;
+    width: 100%;
+}
+
+.titre2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.logo2{
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 1px 5px 1px;
+}
+
+.logo3{
+    width: 125px;
+}
+
+#decaltxt{
+    padding-right: 25px;
+}
+
+#decaltxt2{
+    padding: 0px 10px 0px 10px;
+}
+
+.tailleimg{
+    width: 50px;
+}
+
+#zonelogos{
+    width: 100%;
+}
+
+#listelogos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* saut de ligne si on réduit la résolution */
+    list-style: none;
+    padding-left: 0px; /* retirer la marge de la liste */
+}
+
+/* AUTRE */
+
+#ligne{
+    margin-top: 0px;
+    background-color: rgb(116, 183, 26);
+    width: 100%;
+    height: 2px;
+    text-align: center; /* centrer la flèche en after */
+}
+
+#ligne::after{
+    line-height: 30px;
+    width: 100%;
+    content: '\25be';
+    color: rgb(116, 183, 26);
+    font-size: 80px;
+}
+
+/* FOOTER */
+
+#colonnesfooter{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#listelogos2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap; /* saut de ligne si on réduit la résolution */
+    list-style: none;
+    padding-left: 0px; /* retirer la marge de la liste */
+}
+
+.tailleimg2{
+    width: 120px;
+    height: 80px;
+    padding-right: 5px;
+}
+
+input[type="text"]{
+    margin-bottom: -10px;
+}
+
+input[type="text"], input[type="email"]{
+    padding: 10px;
+}
+
+input[type="submit"]{
+    background-color: rgb(116, 183, 26);
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
