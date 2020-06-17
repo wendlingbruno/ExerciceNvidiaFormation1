@@ -84,9 +84,9 @@ nav a:link, nav a:visited, nav a:hover, nav a:focus{
     color: white;
 }
 
-.boutonbanniere::after{
+/*.boutonbanniere::after{
     content: '\25b8'
-}
+}*/
 
 /* SECTION */
 
@@ -150,6 +150,10 @@ section{
     padding: 0px 10px 0px 10px;
 }
 
+.justifiertxt{
+    text-align: justify;
+}
+
 .tailleimg{
     width: 50px;
 }
@@ -179,12 +183,17 @@ section{
     text-align: center; /* centrer la flèche en after */
 }
 
-#ligne::after{
+#flechebas{
+    margin-top: 0px;
     line-height: 30px;
     width: 100%;
-    content: '\25be';
     color: rgb(116, 183, 26);
     font-size: 80px;
+}
+
+#zonelienancre{
+    color: inherit; /* on récupère la couleur signalé avant */
+    text-decoration: none;
 }
 
 /* FOOTER */
