@@ -3,29 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Site NVIDIA exercice</title>
     </head>
     <body>
         <div id="wrapper">
             <header>
-                <div class="imgmenu" id="hautdepage"> <!-- Pour toute la zone de l'image logo et menu -->
-                    <figure>
-                        <img class="logo" src="img/logonvidia.png" alt="Logo de NVIDIA">
-                    </figure>
-                    <nav>
-                        <ul>
+
+                    <nav class="fondmenu" id="hautdepage">
+                        <figure>
+                            <img class="logo" src="./img/logonvidia.png" alt="Logo de NVIDIA">
+                        </figure>
+                        <ul id="navbase">
                             <li><a href="#">Produits</a></li>
                             <li><a href="#">Gamme RTX</a></li>
                             <li><a href="#">Support & pilotes</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
-                </div>
-                <div> <!-- pour englober toute la zone qui concerne la bannière -->
-                    <img class="banniere" src="img/rtx2060.jpg" alt="Image carte graphique rtx2060">
+                    <nav role="navigation"> <!-- nav version mobile -->
+                        <div id="menuToggle">
+                          <input type="checkbox" />
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <ul id="menu">
+                            <li><a href="#">Produits</li></a>
+                            <li><a href="#">Gamme RTX</li></a>
+                            <li><a href="#">Support & pilotes</li></a>
+                            <li><a href="#">Contact</li></a>
+                          </ul>
+                        </div>
+                    </nav>
+                <div id="taillezonebanniere"> <!-- pour englober toute la zone qui concerne la bannière -->
+                    <img class="banniere" src="./img/rtx2060.jpg" alt="Image carte graphique rtx2060">
                         <div class="zonetextebanniere">
-                            <p class="txtbanniere">Plus d'informations sur la gamme GeForce RTX</p>
+                            <p>Plus d'informations sur la gamme GeForce RTX</p>
                             <a class="boutonbanniere" href="#">Découvrir &#9656</a>
                         </div>
                 </div>
@@ -37,7 +51,7 @@
                             <article>
                                 <div class="titre1">
                                         <figure id="zonecolonne1">
-                                            <img class="logo2" src="img/logonvidia2.png" alt="Logo Nvidia sans le texte">
+                                            <img class="logo2" src="./img/logonvidia2.png" alt="Logo Nvidia sans le texte">
                                         </figure>
                                         <h2 class="soustitre">
                                             LA PUISSANCE, TOUT SIMPLEMENT.
@@ -63,7 +77,7 @@
                                         A PROPOS
                                     </h2>
                                     <figure>
-                                        <img class="logo3" src="img/logonvidia3.png" alt="Logo Nvidia en noir">
+                                        <img class="logo3" src="./img/logonvidia3.png" alt="Logo Nvidia en noir">
                                     </figure>
                                     <div id="decaltxt2" class="justifiertxt">
                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, rem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae maiores alias in beatae, accusamus, porro vitae similique ipsam, veniam hic minima cum? Quis sunt vero ullam doloremque minus ea accusamus saepe rem quas totam, dolore ipsum suscipit ducimus. Suscipit officiis possimus quos laudantium omnis ea ullam labore voluptate consequuntur.
@@ -77,11 +91,11 @@
                                     </div>
                                     <div id="zonelogos">
                                         <ul id="listelogos">
-                                            <li><a href="https://fr-fr.facebook.com/" target="_blank"><img class="tailleimg" src="img/facebook.png" alt="logo facebook"></a></li> <!-- rajout d'un target pour ouvrir dans une autre page -->
-                                            <li><a href="https://twitter.com/" target="_blank"><img class="tailleimg" src="img/twitter.png" alt="logo twitter oiseau"></a></li>
-                                            <li><a href="https://www.instagram.com/" target="_blank"><img class="tailleimg" src="img/instagram.png" alt="logo instagram"></a></li>
-                                            <li><a href="https://www.snapchat.com/" target="_blank"><img class="tailleimg" src="img/snapchat.png" alt="logo snapchat"></a></li>
-                                            <li><a href="https://www.linkedin.com/" target="_blank"><img class="tailleimg" src="img/linkedin.png" alt="logo linkedin"></a></li>
+                                            <li><a class="lienlogos" href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li> <!-- rajout d'un target pour ouvrir dans une autre page -->
+                                            <li><a class="lienlogos" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a class="lienlogos" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a class="lienlogos" href="https://www.snapchat.com/" target="_blank"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                            <li><a class="lienlogos" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -112,18 +126,18 @@
                     <div id="zone2footer">
                         <h3>GALERIE</h3>
                         <ul id="listelogos2">
-                            <li><a href="img/1.jpg" target="_blank"><img class="tailleimg2" src="img/1.jpg" alt="Un côté de la RTX 2060"></a></li>
-                            <li><a href="img/2.jpg" target="_blank"><img class="tailleimg2" src="img/2.jpg" alt="Un côté de la RTX 2060"></a></li>
-                            <li><a href="img/3.jpg" target="_blank"><img class="tailleimg2" src="img/3.jpg" alt="Un côté de la RTX 2060"></a></li>
-                            <li><a href="img/4.jpg" target="_blank"><img class="tailleimg2" src="img/4.jpg" alt="Un côté de la RTX 2060"></a></li>
+                            <li><a href="img/1.jpg" target="_blank"><img class="tailleimg2" src="./img/1.jpg" alt="Un côté de la RTX 2060"></a></li>
+                            <li><a href="img/2.jpg" target="_blank"><img class="tailleimg2" src="./img/2.jpg" alt="Un côté de la RTX 2060"></a></li>
+                            <li><a href="img/3.jpg" target="_blank"><img class="tailleimg2" src="./img/3.jpg" alt="Un côté de la RTX 2060"></a></li>
+                            <li><a href="img/4.jpg" target="_blank"><img class="tailleimg2" src="./img/4.jpg" alt="Un côté de la RTX 2060"></a></li>
                         </ul>
                     </div>
                     <div id="zone3footer">
                         <h3>PARTENAIRES</h3>
                         <ul id="listelogos2">
-                            <li><a href="https://www.intel.fr/" target="_blank"><img class="tailleimg2" src="img/intel.png" alt="Logo Intel"></a></li>
-                            <li><a href="https://www.asus.com/fr/" target="_blank"><img class="tailleimg2" src="img/asus.jpg" alt="Logo Asus"></a></li>
-                            <li><a href="https://www.ea.com/fr-fr/" target="_blank"><img class="tailleimg2" src="img/ea.jpg" alt="Logo Electronic Arts"></a></li>
+                            <li><a href="https://www.intel.fr/" target="_blank"><img class="tailleimg2" src="./img/intel.png" alt="Logo Intel"></a></li>
+                            <li><a href="https://www.asus.com/fr/" target="_blank"><img class="tailleimg2" src="./img/asus.jpg" alt="Logo Asus"></a></li>
+                            <li><a href="https://www.ea.com/fr-fr/" target="_blank"><img class="tailleimg2" src="./img/ea.jpg" alt="Logo Electronic Arts"></a></li>
                         </ul>
                     </div>
                 </div>
